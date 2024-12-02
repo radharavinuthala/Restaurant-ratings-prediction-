@@ -1,1 +1,64 @@
-
+Zomato Restaurant Dataset Analysis
+Objective:
+This project analyzes the Zomato restaurant dataset, focusing on various factors such as restaurant
+ratings,
+cost, and services. It aims to build a machine learning model to predict restaurant ratings based on
+features such as
+location, cuisine, type of service, and other relevant attributes.
+Libraries Used:
+1. NumPy: General-purpose array-processing.
+2. Pandas: Data manipulation and analysis.
+3. Matplotlib: Plotting library for creating visualizations.
+4. Seaborn: Data visualization library based on Matplotlib.
+5. Scikit-learn: Machine learning library for training models.
+6. ExtraTreesRegressor, RandomForestRegressor, LinearRegression, DecisionTreeRegressor: For
+building and evaluating regression models.
+Data Preprocessing:
+1. Loading Data: The dataset is read in chunks to efficiently handle large files.
+2. Handling Missing Data: Rows with missing values are dropped, and unnecessary columns like
+'url', 'dish_liked', and 'phone' are removed.
+3. Data Cleaning:
+- Column names are adjusted for consistency (e.g., renaming 'approx_cost(for two people)' to
+'cost').
+- Removing unnecessary characters such as '/5' from rating values.
+- Converting the 'cost' column to numeric format.
+- Encoding categorical variables using factorization.
+Exploratory Data Analysis (EDA):
+1. Data Distribution: Various visualizations were used to explore the distribution of restaurant
+attributes,
+such as whether restaurants offer online orders, table booking, and the types of services provided.
+2. Correlation Heatmap: A heatmap was generated to check for correlations between different
+numeric variables,
+aiding in the selection of relevant features for modeling.
+3. Categorical Visualizations:
+- Bar plots and stacked bar charts were used to visualize the relationship between restaurant
+ratings and different
+categorical variables like restaurant type, location, and services offered.
+Machine Learning Model:
+- Linear Regression: The model was trained to predict ratings based on features such as cost, type,
+location, and more.
+- Decision Tree Regressor: Applied to predict restaurant ratings based on the input features.
+- Random Forest Regressor: An ensemble learning method used for improved accuracy.
+- Extra Trees Regressor: Another ensemble method used for comparison.
+Model Evaluation:
+- R-Squared Score: Used to evaluate the performance of the models. The models' predictions were
+compared based on the
+R-squared score, which indicates the proportion of the variance in the dependent variable that is
+predictable from the
+independent variables.
+Key Insights:
+1. Restaurant Ratings: The ratings of restaurants vary based on the location and the type of
+services provided.
+2. Cost Distribution: A count plot of restaurant costs helps understand the pricing range across
+different locations and types of services.
+3. Online Orders and Table Booking: Bar plots were created to understand the frequency of
+restaurants offering online ordering
+and table booking services.
+Conclusion:
+The project successfully cleansed and processed the dataset, performed exploratory analysis, and
+built multiple regression models
+to predict restaurant ratings. The models were evaluated using R-squared scores, and insights into
+the relationship between
+various restaurant features and ratings were drawn. This analysis can aid in decision-making for
+restaurant owners, investors,
+or anyone interested in understanding the factors affecting restaurant success.
